@@ -11,6 +11,8 @@ public class Sauce_3 {
 		
 		WebDriver driver = new ChromeDriver();
 		
+		driver.get("https://google.com");
+		
 		String url ="https://www.saucedemo.com";
 		//Open the URL
 		driver.get(url);
