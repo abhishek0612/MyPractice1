@@ -11,18 +11,20 @@ public class Sauce_3 {
 		
 		WebDriver driver = new ChromeDriver();
 		
+		String url ="https://www.saucedemo.com";
 		//Open the URL
-		driver.get("https://www.saucedemo.com/");
+		driver.get(url);
 		
 		//Get the logo name 
 		//System.out.println(driver.findElement(By.xpath("//div[@class='login_logo']")));
-		
-		
+
+        String username ="standard_user";
 		//Enter username 
-		driver.findElement(By.id("user-name")).sendKeys("standard_user");
+		driver.findElement(By.id("user-name")).sendKeys(username);
 		
+		String password = "secret_sauce";
 		//Enter password 
-		driver.findElement(By.id("password")).sendKeys("secret_sauce");
+		driver.findElement(By.id("password")).sendKeys(password);
 		
 		//Click on the login button 
 		driver.findElement(By.id("login-button")).click();
